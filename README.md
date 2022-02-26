@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @aetr1cs
-- 👀 I’m interested in roblox scripting
+- 👀 I’m interested in roblox exploiting
 - 🌱 I’m currently learning lua
 - 💞️ I’m looking to collaborate on your mother
 - 📫 How to reach me aetrics#9588
