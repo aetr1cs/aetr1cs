@@ -1,6 +1,6 @@
 if game.PlaceId == 6152116144 then
     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-    local Window = OrionLib:MakeWindow({Name = "aetware | Project Slayers", HidePremium = false, SaveConfig = true, ConfigFolder = "aetrics"})
+    local Window = OrionLib:MakeWindow({Name = "atrix hub O_O | Project Slayers", HidePremium = false, SaveConfig = true, ConfigFolder = "aetrics"})
     
     --values
 
@@ -30,7 +30,12 @@ if game.PlaceId == 6152116144 then
         PremiumOnly = false
     })
     --esp tab functions
-
+    ESPTab:AddButton({
+        Name = "fullbright/nofog"
+        Callback = function()
+            Loadstring: loadstring(game:HttpGet("https://pastebin.com/raw/06iG6YkU", true))()
+        end
+    })
     ESPTab:AddButton({
         Name = "demon flowers esp",
         Callback = function()
