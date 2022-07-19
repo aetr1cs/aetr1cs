@@ -31,7 +31,7 @@ if game.PlaceId == 6152116144 then
     })
     --esp tab functions
     ESPTab:AddButton({
-        Name = "fullbright/nofog"
+        Name = "fullbright/nofog",
         Callback = function()
             Loadstring: loadstring(game:HttpGet("https://pastebin.com/raw/06iG6YkU", true))()
         end
