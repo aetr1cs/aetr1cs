@@ -1,6 +1,6 @@
 if game.PlaceId == 6152116144 then
     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-    local Window = OrionLib:MakeWindow({Name = "atrix hub O_O | Project Slayers", HidePremium = false, SaveConfig = true, ConfigFolder = "aetrics"})
+    local Window = OrionLib:MakeWindow({Name = "aetware | Project Slayers", HidePremium = false, SaveConfig = true, ConfigFolder = "aetrics"})
     
     --values
 
