@@ -1,0 +1,65 @@
+if game.PlaceId == 6152116144 then
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local Window = OrionLib:MakeWindow({Name = "atrix hub O_O | Project Slayers", HidePremium = false, SaveConfig = true, ConfigFolder = "aetrics"})
+    
+    --values
+
+
+
+
+
+    --functions
+
+
+--windows
+    local ESPTab = Window:MakeTab({
+        Name = "ESP",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+    local MoveTab = Window:MakeTab({
+        Name = "Movement",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
+    local TPTab = Window:MakeTab({
+        Name = "Teleports",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    --esp tab functions
+
+    ESPTab:AddButton({
+        Name = "demon flowers esp",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/aetr1cs/projectslayers/main/demonflowers"))()
+
+          end    
+    })
+
+--movetab functions
+
+MoveTab:AddButton({
+    Name = "fly (follows mouse, toggle with z too lazy for inbuilt toggle)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/aetr1cs/projectslayers/main/fly"))()
+
+      end    
+})
+
+--tptab functions
+TPTab:AddLabel("All teleports use slow tween services to stay undetected")
+
+
+TPTab:AddButton({
+    Name = "Teleport to Muzan, Use at night",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/aetr1cs/projectslayers/main/muzan"))()
+
+      end    
+})
+
+end
+OrionLib:Init()
