@@ -1,0 +1,33 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "atrix breaking point", HidePremium = false, SaveConfig = true, ConfigFolder = "aetrics"})
+
+--windows
+
+local OffsaleTab = Window:MakeTab({
+    Name = "Offsales",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Credits = Window:MakeTab({
+    Name = "Credits",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+--buttons
+OffsaleTab:AddButton({
+    Name = "Knife Antlers",
+    Callback = function()
+        local args = {
+            [1] = 66,
+            [2] = "Accessories",
+            [3] = "Knife Antlers" 
+        }
+
+        game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(unpack(args))
+        }
+
+      end    
+})
